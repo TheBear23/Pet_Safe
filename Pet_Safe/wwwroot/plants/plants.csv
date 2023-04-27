@@ -1,47 +1,107 @@
 ﻿name,type,toxic
-Adam and Eve,Outdoor,Cats/Dogs/Rabbits
-African Wonder Tree,Outdoor,Cats/Dogs/Rabbits
-Alocasia (Elephant's Ear),Indoor,Cats/Dogs/Rabbits
-Aloe,Indoor/Outdoor,Cats/Dogs/Rabbits
-Amaryllis,Outdoor,Cats/Dogs/Rabbits
-Ambrosia Mexicana,Outdoor,Cats/Dogs
-American Bittersweet,Outdoor,Cats/Dogs
-American Holly,Outdoor,Cats/Dogs/Rabbits
-American Mandrake,Outdoor,Cats/Dogs/Rabbits
-American Yew (Canada Yew, Canadian Yew),Outdoor,Cats/Dogs/Rabbits
-Andromeda Japonica,Outdoor,Cats/Dogs/Rabbits
-Angelica Tree,Outdoor,Cats/Dogs/Rabbits
-Apple (Includes crabapples),Outdoor,Cats/Dogs
-Apricot,Outdoor,Cats/Dogs
-Bird's Tongue Flower,Outdoor,Cats/Dogs/Rabbits
-Bishop’s Weed,Outdoor,Cats/Dogs
-Bitter Root (Dogbane Hemp, Indian Hemp),Outdoor,Cats/Dogs
-Black Calla (Solomon's Lily, Wild Calla, Wild Arum),Outdoor,Cats/Dogs
-Black Cherry,Outdoor,Cats/Dogs
-Black Laurel (Dog Hobble, Dog Laurel, Fetter Bush, Sierra Laurel),Outdoor,Cats/Dogs
-Black Nightshade,Outdoor,Cats/Dogs/Rabbits
-Cape Jasmine (Gardenia),Outdoor,Cats/Dogs
-Caraway (Meridian Fennel, Persian Cumin),Outdoor,Cats/Dogs
-Cardboard Cycad,Indoor/Outdoor,Cats/Dogs
-Cardinal Flower (Lobelia, Indian Pink),Outdoor,Cats/Dogs
-Carnation (Pinks, Wild Carnation, Sweet William),Indoor/Outdoor,Cats/Dogs
-Desert Azalea(Desert Rose),Indoor,Cats/Dogs/Rabbits
+Adam and Eve,Outdoor,Cats
+Adam and Eve,Outdoor,Dogs
+Adam and Eve,Outdoor,Rabbits
+African Wonder Tree,Outdoor,Cats
+African Wonder Tree,Outdoor,Dogs
+African Wonder Tree,Outdoor,Rabbits
+Alocasia (Elephant's Ear),Indoor,Cats
+Alocasia (Elephant's Ear),Indoor,Dogs
+Alocasia (Elephant's Ear),Indoor,Rabbits
+Aloe,Indoor/Outdoor,Cats
+Aloe,Indoor/Outdoor,Dogs
+Aloe,Indoor/Outdoor,Rabbits
+Amaryllis,Outdoor,Cats
+Amaryllis,Outdoor,Dogs
+Amaryllis,Outdoor,Rabbits
+Ambrosia Mexicana,Outdoor,Cats
+Ambrosia Mexicana,Outdoor,Dogs
+American Bittersweet,Outdoor,Cats
+American Bittersweet,Outdoor,Dogs
+American Holly,Outdoor,Cats
+American Holly,Outdoor,Dogs
+American Holly,Outdoor,Rabbits
+American Mandrake,Outdoor,Cats
+American Mandrake,Outdoor,Dogs
+American Mandrake,Outdoor,Rabbits
+American Yew (Canada Yew, Canadian Yew),Outdoor,Cats
+American Yew (Canada Yew, Canadian Yew),Outdoor,Dogs
+American Yew (Canada Yew, Canadian Yew),Outdoor,Rabbits
+Andromeda Japonica,Outdoor,Cats
+Andromeda Japonica,Outdoor,Dogs
+Andromeda Japonica,Outdoor,Rabbits
+Angelica Tree,Outdoor,Cats
+Angelica Tree,Outdoor,Dogs
+Angelica Tree,Outdoor,Rabbits
+Apple (Includes crabapples),Outdoor,Cats
+Apple (Includes crabapples),Dogs
+Apricot,Outdoor,Cats
+Apricot,Outdoor,Dogs
+Bird's Tongue Flower,Outdoor,Cats
+Bird's Tongue Flower,Outdoor,Dogs
+Bird's Tongue Flower,Outdoor,Rabbits
+Bishop’s Weed,Outdoor,Cats
+Bishop’s Weed,Outdoor,Dogs
+Bitter Root (Dogbane Hemp, Indian Hemp),Outdoor,Cats
+Bitter Root (Dogbane Hemp, Indian Hemp),Outdoor,Dogs
+Black Calla (Solomon's Lily, Wild Calla, Wild Arum),Outdoor,Cats
+Black Calla (Solomon's Lily, Wild Calla, Wild Arum),Outdoor,Dogs
+Black Cherry,Outdoor,Cats
+Black Cherry,Outdoor,Dogs
+Black Laurel (Dog Hobble, Dog Laurel, Fetter Bush, Sierra Laurel),Outdoor,Cats
+Black Laurel (Dog Hobble, Dog Laurel, Fetter Bush, Sierra Laurel),Outdoor,Dogs
+Black Nightshade,Outdoor,Cats
+Black Nightshade,Outdoor,Dogs
+Black Nightshade,Outdoor,Rabbits
+Cape Jasmine (Gardenia),Outdoor,Cats
+Cape Jasmine (Gardenia),Outdoor,Dogs
+Caraway (Meridian Fennel, Persian Cumin),Outdoor,Cats
+Caraway (Meridian Fennel, Persian Cumin),Outdoor,Dogs
+Cardboard Cycad,Indoor/Outdoor,Cats
+Cardboard Cycad,Indoor/Outdoor,Dogs
+Cardinal Flower (Lobelia, Indian Pink),Outdoor,Cats
+Cardinal Flower (Lobelia, Indian Pink),Outdoor,Dogs
+Carnation (Pinks, Wild Carnation, Sweet William),Indoor/Outdoor,Cats
+Carnation (Pinks, Wild Carnation, Sweet William),Indoor/Outdoor,Dogs
+Desert Azalea(Desert Rose),Indoor,Cats
+Desert Azalea(Desert Rose),Indoor,Dogs
+Desert Azalea(Desert Rose),Indoor,Rabbits
 Day Lily,Indoor/Outdoor,Cats
-English Holly,Outdoor,Cats/Dogs
-Elephant Ears,Outdoor,Cats/Dogs
-Eucalyptus,Indoor/Outdoor,Cats/Dogs
-Fig,Outdoor,Cats/Dogs
-Foxglove,Outdoor,Cats/Dogs/Rabbits
-Gardenia,Outdoor,Cats/Dogs
-Garlic,Indoor/Outdoor,Cats/Dogs/Rabbits
+English Holly,Outdoor,Cats
+English Holly,Outdoor,Dogs
+Elephant Ears,Outdoor,Cats
+Elephant Ears,Outdoor,Dogs
+Eucalyptus,Indoor/Outdoor,Cats
+Eucalyptus,Indoor/Outdoor,Dogs
+Fig,Outdoor,Cats
+Fig,Outdoor,Dogs
+Foxglove,Outdoor,Cats
+Foxglove,Outdoor,Dogs
+Foxglove,Outdoor,Rabbits
+Gardenia,Outdoor,Cats
+Gardenia,Outdoor,Dogs
+Garlic,Indoor/Outdoor,Cats
+Garlic,Indoor/Outdoor,Dogs
+Garlic,Indoor/Outdoor,Rabbits
 Golden Ragwort,Outdoor,Cats/Dogs/Rabbits
-Grapefruit,Outdoor,Cats/Dogs
-Hellbore,Outdoor,Cats/Dogs/Rabbits
-Holly,Outdoor,Cats/Dogs/Rabbits
-Horseweed,Outdoor,Cats/Dogs
-Lemongrass,Outdoor,Cats/Dogs
-Milkweed,Outdoor,Cats/Dogs
-Mint,Indoor/Outdoor,Cats/Dogs
+Golden Ragwort,Outdoor,Dogs
+Golden Ragwort,Outdoor,Rabbits
+Grapefruit,Outdoor,Cats
+Grapefruit,Outdoor,Dogs
+Hellbore,Outdoor,Cats
+Hellbore,Outdoor,Dogs
+Hellbore,Outdoor,Rabbits
+Holly,Outdoor,Cats
+Holly,Outdoor,Dogs
+Holly,Outdoor,Rabbits
+Horseweed,Outdoor,Cats
+Horseweed,Outdoor,Dogs
+Lemongrass,Outdoor,Cats
+Lemongrass,Outdoor,Dogs
+Milkweed,Outdoor,Cats
+Milkweed,Outdoor,Dogs
+Mint,Indoor/Outdoor,Cats
+Mint,Indoor/Outdoor,Dogs
 Achira,Outdoor,N/A
 Acorn Squash,Outdoor,N/A
 African Daisy,Outdoor,Rabbits
