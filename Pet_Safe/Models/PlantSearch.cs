@@ -7,7 +7,7 @@ namespace Pet_Safe.Models
     {
         public static bool IsPlantToxic(string plantName)
         {
-            string filePath = @"C:\path\to\plants.csv";
+            string filePath = @"C:\Users\ntnic\Desktop\LC101C#\Projects&Assignments\Pet_Safe\Pet_Safe\wwwroot\plants\plants.csv";
 
             // Check if the file exists before attempting to read it
             if (!File.Exists(filePath))
@@ -38,7 +38,7 @@ namespace Pet_Safe.Models
 
         public static List<string> GetPlantNames()
         {
-            string filePath = @"C:\path\to\plants.csv";
+            string filePath = @"C:\Users\ntnic\Desktop\LC101C#\Projects&Assignments\Pet_Safe\Pet_Safe\wwwroot\plants\plants.csv";
 
             // Check if the file exists before attempting to read it
             if (!File.Exists(filePath))
