@@ -7,12 +7,14 @@ namespace Pet_Safe.Controllers
 {
     public class PlantController : Controller
     {
-        private PlantDbContext context;
+        private readonly ApplicationDbContext? context;
+        private readonly ApplicationDbContext? dbContext;
 
-        public PlantController(PlantDbContext dbContext)
+        public PlantController(ApplicationDbContext dbContext)
         {
             context = dbContext;
         }
+
         public IActionResult Index()
         {
             return View();
