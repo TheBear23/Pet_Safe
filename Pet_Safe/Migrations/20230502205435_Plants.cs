@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace Pet_Safe.Data.Migrations
+namespace Pet_Safe.Migrations
 {
-    public partial class ThirdTestMigration : Migration
+    public partial class Plants : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
