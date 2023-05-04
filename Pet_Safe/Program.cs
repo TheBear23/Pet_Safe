@@ -5,14 +5,28 @@ using Pet_Safe.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+var connectionString = "server=localhost;user=petsafe;password=petsafe;database=pet_safe";
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
+
+builder.Services.AddDbContext<ApplicationDbContext>(dbContextOptions =>
+    dbContextOptions.UseMySql(connectionString, serverVersion));
+/*builder.Services.AddDatabaseDeveloperPageExceptionFilter();*/
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+builder.Services.AddDefaultIdentity<IdentityUser>
+(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+    options.Password.RequireDigit = false;
+    options.Password.RequiredLength = 10;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = false;
+}).AddEntityFrameworkStores<ApplicationDbContext>();
 
 var app = builder.Build();
 
@@ -35,6 +49,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",
@@ -42,3 +57,4 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
