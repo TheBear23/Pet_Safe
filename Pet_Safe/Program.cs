@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pet_Safe.Data;
@@ -5,6 +6,9 @@ using Pet_Safe.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
 var connectionString = "server=localhost;user=petsafe;password=petsafe;database=pet_safe";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
 
@@ -12,10 +16,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(dbContextOptions =>
     dbContextOptions.UseMySql(connectionString, serverVersion));
 /*builder.Services.AddDatabaseDeveloperPageExceptionFilter();*/
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+/*builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages();*/
 
 builder.Services.AddDefaultIdentity<IdentityUser>
 (options =>
@@ -57,4 +61,3 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
-
