@@ -26,7 +26,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>
 {
     options.SignIn.RequireConfirmedAccount = true;
     options.Password.RequireDigit = false;
-    options.Password.RequiredLength = 10;
+    options.Password.RequiredLength = 8;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = true;
     options.Password.RequireLowercase = false;
