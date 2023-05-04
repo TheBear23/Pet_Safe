@@ -10,7 +10,7 @@ namespace Pet_Safe.Models
 
         [Required]
         public string? Name { get; set; }
-        public string? Breed { get; set; }
+        //public string? Breed { get; set; }
 
     }
 }

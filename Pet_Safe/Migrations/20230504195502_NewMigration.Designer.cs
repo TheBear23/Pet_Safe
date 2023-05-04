@@ -11,8 +11,8 @@ using Pet_Safe.Data;
 namespace Pet_Safe.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230502211140_NewSchema")]
-    partial class NewSchema
+    [Migration("20230504195502_NewMigration")]
+    partial class NewMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
