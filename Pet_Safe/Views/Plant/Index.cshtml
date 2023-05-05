@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Pet_Safe.Models.Plant>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure want to delete this?</h3>
+<div>
+    <h4>Plant</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(Model => Model.Name)
+        </dt>
+        <dd class = "col-sm-10">  
+            @if (Model.FirstOrDefault() != null)
+            {
+                @Html.DisplayFor(model => model.FirstOrDefault().Name)
+            }
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="@Model.FirstOrDefault().Id" />
+        <div class="form-group">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsToxic)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var plant in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => plant.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => plant.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => plant.IsToxic)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=plant.Id  }) |
+                @Html.ActionLink("Details", "Details", new {  id=plant.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=plant.Id  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
