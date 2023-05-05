@@ -9,8 +9,8 @@ namespace Pet_Safe.Data
     public class ApplicationDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
     {
         public DbSet<Plants> Plant { get; set; }
-        public DbSet<Pets> Pets { get; set; }
-        public DbSet<User> users { get; set; }
+        public DbSet<Pets> Pet { get; set; }
+        public DbSet<User> Users { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

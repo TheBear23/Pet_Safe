@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Numerics;
 using Microsoft.AspNetCore.Mvc;
 using Pet_Safe.Data;
 using Pet_Safe.Models;
@@ -16,7 +17,8 @@ namespace Pet_Safe.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<Plants> plants = context.Plant.ToList();
+            return View(plants);
         }
     }
 }
