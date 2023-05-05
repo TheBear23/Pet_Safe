@@ -6,11 +6,11 @@ using Pet_Safe.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-
 var connectionString = "server=localhost;user=petsafe;password=petsafe;database=pet_safe";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(dbContextOptions =>
     dbContextOptions.UseMySql(connectionString, serverVersion));
