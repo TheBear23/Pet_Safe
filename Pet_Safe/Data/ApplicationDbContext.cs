@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Pet_Safe.Models;
 
 namespace Pet_Safe.Data
 {
@@ -9,5 +10,7 @@ namespace Pet_Safe.Data
             : base(options)
         {
         }
+
+        public DbSet<Plant> Plants { get; set; }
     }
 }
