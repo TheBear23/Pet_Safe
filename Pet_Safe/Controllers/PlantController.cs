@@ -9,8 +9,8 @@ namespace Pet_Safe.Controllers
 {
     public class PlantController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        public PlantController(ApplicationDbContext context)
+        private readonly PlantDbContext _context;
+        public PlantController(PlantDbContext context)
         {
             _context = context;
         }

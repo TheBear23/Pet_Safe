@@ -10,7 +10,7 @@ using Pet_Safe.Data;
 
 namespace Pet_Safe.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(PlantDbContext))]
     [Migration("20230505162102_NewDeletionMethod")]
     partial class NewDeletionMethod
     {

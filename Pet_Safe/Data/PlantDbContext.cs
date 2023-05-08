@@ -4,9 +4,9 @@ using Pet_Safe.Models;
 
 namespace Pet_Safe.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class PlantDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public PlantDbContext(DbContextOptions<PlantDbContext> options)
             : base(options)
         {
         }
