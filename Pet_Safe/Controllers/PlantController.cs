@@ -19,22 +19,63 @@ namespace Pet_Safe.Controllers
         {
             List<Plant> plants = new List<Plant>();
             string[] lines = System.IO.File.ReadAllLines(@"C:\Users\ntnic\Desktop\LC101C#\Projects&Assignments\Pet_Safe\Pet_Safe\wwwroot\plants\plants.csv");
-                foreach (string line in lines)
+            foreach (string line in lines)
             {
                 string[] fields = line.Split(',');
 
                 Plant plant = new Plant()
                 {
                     Name = fields[0],
-                    IsToxic = bool.Parse(fields[1])
+                    IsToxic = bool.Parse(fields[2])
                 };
                 plants.Add(plant);
             }
             return View(plants);
         }
-        public IActionResult DeletePlants(int? id) 
+
+        public IActionResult Toxicity(string type, string animal)
         {
-            if (id == null) 
+            List<Plant> plants = new List<Plant>();
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\ntnic\Desktop\LC101C#\Projects&Assignments\Pet_Safe\Pet_Safe\wwwroot\plants\plants.csv");
+            foreach (string line in lines)
+            {
+                string[] fields = line.Split(",");
+                if (fields[1] == type)
+                {
+                    Plant plant = new Plant()
+                    {
+                        Name = fields[0],
+                        IsToxic = bool.Parse(fields[2])
+                    };
+                    plants.Add(plant);
+                }
+            }
+
+            foreach (Plant plant in plants)
+            {
+                if (plant.IsToxic == true && animal == "Cat")
+                {
+                    ViewBag.Message = plant.Name + "Is TOXIC to cats!! Avoid at all cost!!";
+                    return View();
+                }
+                else if (plant.IsToxic == true && animal == "Dog")
+                {
+                    ViewBag.Message = plant.Name + "Is TOXIC to dogs!! Avoid at all cost!!";
+                    return View();
+                }
+                else if (plant.IsToxic == true && animal == "Rabbit")
+                {
+                    ViewBag.Message = plant.Name + "Is TOXIC to dogs!! Avoid at all cost!!";
+                    return View();
+                }
+            }
+
+            ViewBag.Message = "SAFE!! Non-Toxic!!";
+            return View();
+        }
+        public IActionResult DeletePlants(int? id)
+        {
+            if (id == null)
             {
                 return NotFound();
             }
@@ -55,6 +96,23 @@ namespace Pet_Safe.Controllers
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public IActionResult AddPlant(Plant plant)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(plant);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(plant);
+        }
+
+        public IActionResult AddPlant()
+        {
+            return View();
         }
     }
 }

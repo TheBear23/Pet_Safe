@@ -2,8 +2,15 @@
 
 namespace Pet_Safe.Models
 {
-    public class User
+    public class Profile
     {
+        public Profile(int id, string? email, string? password)
+        {
+            Id = id;
+            Email = email;
+            Password = password;
+        }
+
         public int Id { get; set; }
 
         [Required]
