@@ -23,3 +23,10 @@ to make sure I was able to edit, add, create, and delete information from the da
 	-Created a new user to reflect changes, 
 		-Petsafesecond@gmail.com
 		-Petsafe123
+
+	-Added Bootstrap style, the file is named vapor and can be found in wwwroot/css/vapor.css
+		-Made changes too /shared/_layout.cshtml to account for the bootstrap changes.
+
+	-Search bar does not function however I was wondering if it was possible to make work and display only on View, Add, Edit, and delete
+
+	-Will add more personal customations to make the website more appealing.
