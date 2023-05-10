@@ -110,7 +110,6 @@ namespace Pet_Safe.Controllers
             }
             return View(plant);
         }
-
         public IActionResult AddPlant()
         {
             return View();
