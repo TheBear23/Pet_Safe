@@ -1,0 +1,25 @@
+﻿Notes file Created By Ahmir-
+
+5/10/2023-Ahmir
+
+-I added [Authorize] above the Index Get method in PlantsController.cs
+
+-Created a registered user that has changes reflected in database
+	-Changes are reflected into MySql
+	-Petsafe123@gmail.com
+	-Petsafe123
+
+-I deleted the old database in MySql. Migrate and update from visual studios, Imported the plantcsv file into the new database. Then did Operational test
+to make sure I was able to edit, add, create, and delete information from the database. The changes and test were reflected into MySql after refreshing.
+
+-I created a search controller with the intent of making it require authorization before access aswell.
+	-It should require sign in before allowing access.
+	-Should be on a seperate page to allow room for users to see full results.
+
+
+	5/10/2023-Ahmir
+	-Tested the website so far and next feature Im working on is the search Feature which will be also needing authorization
+
+	-Created a new user to reflect changes, 
+		-Petsafesecond@gmail.com
+		-Petsafe123

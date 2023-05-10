@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +20,8 @@ namespace Pet_Safe.Controllers
             _context = context;
         }
 
-        // GET: Plants
+        // GET: Plants'
+        [Authorize]
         public async Task<IActionResult> Index()
         {
               return _context.Plants != null ? 
