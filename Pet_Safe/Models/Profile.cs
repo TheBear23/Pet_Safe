@@ -2,7 +2,7 @@
 
 namespace Pet_Safe.Models
 {
-    public class User
+    public class Profile
     {
         public int Id { get; set; }
 
