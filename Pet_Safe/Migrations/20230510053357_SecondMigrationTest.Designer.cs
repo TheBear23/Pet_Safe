@@ -11,14 +11,14 @@ using Pet_Safe.Data;
 namespace Pet_Safe.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230505162102_NewDeletionMethod")]
-    partial class NewDeletionMethod
+    [Migration("20230510053357_SecondMigrationTest")]
+    partial class SecondMigrationTest
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.14")
+                .HasAnnotation("ProductVersion", "6.0.16")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -217,16 +217,22 @@ namespace Pet_Safe.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Pet_Safe.Models.Plant", b =>
+            modelBuilder.Entity("Pet_Safe.Models.Plants", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<bool?>("IsToxic")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ToxicTo")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

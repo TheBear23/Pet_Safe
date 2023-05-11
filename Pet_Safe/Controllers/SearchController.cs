@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Pet_Safe.Data;
+
 namespace Pet_Safe.Controllers
 {
-    public class PetController : Controller
+    public class SearchController : Controller
     {
+        [Authorize]
         public IActionResult Index()
         {
             return View();
