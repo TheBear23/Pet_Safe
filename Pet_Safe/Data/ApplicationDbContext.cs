@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Pet_Safe.Models;
 
@@ -20,5 +21,6 @@ namespace Pet_Safe.Data
         var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
             optionsBuilder.UseMySql(connectionString, serverVersion);
         }
-    }
-}
+
+            }
+        }
