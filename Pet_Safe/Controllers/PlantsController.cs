@@ -22,12 +22,25 @@ namespace Pet_Safe.Controllers
 
         // GET: Plants'
         [Authorize]
-        public async Task<IActionResult> Index()
-        {
-              return _context.Plants != null ? 
-                          View(await _context.Plants.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Plants'  is null.");
-        }
+             public async Task<IActionResult> Index(string searchString)
+            {
+                if (_context.Plants == null)
+                {
+                    return Problem("Entity set 'MvcPlantsContext.Plants'  is null.");
+                }
+                var plant = from p in _context.Plants
+                            select p;
+                if (!String.IsNullOrEmpty(searchString))
+                {
+                    plant = plant.Where(s => s.Name!.Contains(searchString));
+                }
+                return View(await plant.ToListAsync());
+            }
+
+            /*              return _context.Plants != null ? 
+                                      View(await _context.Plants.ToListAsync()) :
+                                      Problem("Entity set 'ApplicationDbContext.Plants'  is null.");
+        }*/
 
         // GET: Plants/Details/5
         public async Task<IActionResult> Details(int? id)
