@@ -10,7 +10,7 @@ namespace Pet_Safe.Models
         
         public string Name { get; set; }
         public string Type { get; set; }
-        public string ToxicTo { get; set; }
+        public  string ToxicTo { get; set; }
 
         DbSet<Plants> Plant { get; set; }
     }

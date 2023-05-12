@@ -23,9 +23,14 @@
                 <span asp-validation-for="Type" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <select name="ToxicTo" id="ToxicTo" multiple>                   
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="rabbit">Rabbit</option>                                   
                 <label asp-for="ToxicTo" class="control-label"></label>
                 <input asp-for="ToxicTo" class="form-control" />
                 <span asp-validation-for="ToxicTo" class="text-danger"></span>
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
